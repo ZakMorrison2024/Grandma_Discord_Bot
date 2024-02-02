@@ -10,7 +10,7 @@ async def on_message(message): # when client types a message
 
   if message:
          list = ["What was that deary??", "Not since 1958!","Sweetie.", "Let grandma see you."]
-         await message.channel.send(random.choice(list)) # discord sends data back
+         await message.channel.send(list[random.randint(len(list))]) # discord sends data back
 
 
 
